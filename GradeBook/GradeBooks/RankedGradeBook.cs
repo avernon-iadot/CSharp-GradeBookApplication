@@ -33,7 +33,7 @@ namespace GradeBook.GradeBooks
                 return 'F';
         }
 
-        public override void CalculateStatistics()
+        public override void CalculateStudentStatistics(string name)
         {
             if (Students.Count < 5)
             {
@@ -41,9 +41,7 @@ namespace GradeBook.GradeBooks
                 return;
             }
 
-
-
-            base.CalculateStatistics();
+            base.CalculateStudentStatistics(name);
         }
 
     }
